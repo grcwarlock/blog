@@ -1,0 +1,8 @@
+title: GRC Warlock
+description: Notes on governance, risk, compliance, and whatever else.
+theme: minima
+url: "https://grcwarlock.github.io"
+baseurl: "/blog"
+
+minima:
+  skin: classic

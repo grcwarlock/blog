@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2026-03-09T20:03:19-06:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Your Blog Title</title><subtitle>A clean, editorial blog.</subtitle><author><name>Your Name</name></author><entry><title type="html">Hello World</title><link href="http://localhost:4000/blog/2026/03/09/hello-world/" rel="alternate" type="text/html" title="Hello World" /><published>2026-03-09T00:00:00-06:00</published><updated>2026-03-09T00:00:00-06:00</updated><id>http://localhost:4000/blog/2026/03/09/hello-world</id><content type="html" xml:base="http://localhost:4000/blog/2026/03/09/hello-world/"><![CDATA[<p>This is the first post on a new blog. The theme is built for long-form writing — clean typography, no distractions, and a layout that gets out of the way.</p>
+
+<h2 id="how-it-works">How it works</h2>
+
+<p>Posts are written in Markdown and live in the <code class="language-plaintext highlighter-rouge">_posts</code> directory. Jekyll handles the rest: parsing front matter, generating pages, building the RSS feed.</p>
+
+<p>The design leans on two typefaces. <strong>IBM Plex Mono</strong> handles headings, navigation, labels — anything structural. <strong>IBM Plex Serif</strong> handles body text, where readability matters most.</p>
+
+<h2 id="what-belongs-here">What belongs here</h2>
+
+<p>Notes on things worth writing about. Analysis when something deserves more than a quick take. The occasional long read when the subject earns it.</p>
+
+<blockquote>
+  <p>The best writing happens when you stop trying to sound like a writer and start trying to be clear.</p>
+</blockquote>
+
+<p>That’s the goal.</p>]]></content><author><name>Your Name</name></author><category term="Meta" /><summary type="html"><![CDATA[This is the first post on a new blog. The theme is built for long-form writing — clean typography, no distractions, and a layout that gets out of the way.]]></summary></entry><entry><title type="html">On Writing Clearly</title><link href="http://localhost:4000/blog/2026/03/08/on-writing-clearly/" rel="alternate" type="text/html" title="On Writing Clearly" /><published>2026-03-08T00:00:00-07:00</published><updated>2026-03-08T00:00:00-07:00</updated><id>http://localhost:4000/blog/2026/03/08/on-writing-clearly</id><content type="html" xml:base="http://localhost:4000/blog/2026/03/08/on-writing-clearly/"><![CDATA[<p>Clear writing starts with clear thinking. If you cannot explain what you mean in a plain sentence, adding more words will not help. It will make things worse.</p>
+
+<h2 id="cut-the-filler">Cut the filler</h2>
+
+<p>Every sentence should carry weight. If a sentence exists only to transition between two other sentences, delete it and let the gap do the work. Readers are smarter than most writing gives them credit for.</p>
+
+<h2 id="say-the-thing">Say the thing</h2>
+
+<p>The most common failure mode in writing is circling the point without landing on it. State the claim. Support it. Move on.</p>
+
+<p>This applies whether you are writing a memo, a blog post, or an email. The reader’s time is not yours to waste.</p>
+
+<h2 id="read-it-out-loud">Read it out loud</h2>
+
+<p>If a sentence sounds wrong when spoken, it reads wrong too. The ear catches what the eye skips — awkward rhythm, unnecessary repetition, clauses that go nowhere.</p>
+
+<hr />
+
+<p>None of this is new advice. The hard part is doing it consistently, especially when the subject is complex and the temptation to hedge is strong.</p>]]></content><author><name>Your Name</name></author><category term="Writing" /><summary type="html"><![CDATA[Clear writing starts with clear thinking. If you cannot explain what you mean in a plain sentence, adding more words will not help. It will make things worse.]]></summary></entry></feed>

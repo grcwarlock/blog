@@ -1,0 +1,14 @@
+<nav>
+  <a href="{{ '/' | relative_url }}" class="nav-id">{{ site.title | default: "Blog" }}</a>
+  <button class="nav-toggle" aria-label="Menu" id="menuToggle">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="{{ '/' | relative_url }}" class="nav-link{% if page.url == '/' %} active{% endif %}">Posts</a></li>
+    <li><a href="{{ '/about' | relative_url }}" class="nav-link{% if page.url == '/about/' %} active{% endif %}">About</a></li>
+  </ul>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="{{ '/' | relative_url }}">Posts</a>
+  <a href="{{ '/about' | relative_url }}">About</a>
+</div>

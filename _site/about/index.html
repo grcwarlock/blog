@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/blog/assets/css/style.css"/>
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Your Blog Title" />
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>About | Your Blog Title</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="About" />
+<meta name="author" content="Your Name" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A clean, editorial blog." />
+<meta property="og:description" content="A clean, editorial blog." />
+<link rel="canonical" href="http://localhost:4000/blog/about/" />
+<meta property="og:url" content="http://localhost:4000/blog/about/" />
+<meta property="og:site_name" content="Your Blog Title" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="About" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Your Name"},"description":"A clean, editorial blog.","headline":"About","name":"Your Blog Title","url":"http://localhost:4000/blog/about/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+<body>
+
+<nav>
+  <a href="/blog/" class="nav-id">Your Blog Title</a>
+  <button class="nav-toggle" aria-label="Menu" id="menuToggle">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="/blog/" class="nav-link">Posts</a></li>
+    <li><a href="/blog/about" class="nav-link active">About</a></li>
+  </ul>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/blog/">Posts</a>
+  <a href="/blog/about">About</a>
+</div>
+
+
+<div class="content">
+  <h1>About</h1>
+  <div class="body">
+    <p>This is a personal blog built with Jekyll and hosted on GitHub Pages.</p>
+
+<p>The theme uses IBM Plex Mono for headings and interface elements, paired with IBM Plex Serif for body text. It supports dark mode automatically via <code class="language-plaintext highlighter-rouge">prefers-color-scheme</code>.</p>
+
+<h2 id="writing-a-post">Writing a post</h2>
+
+<p>Create a new file in <code class="language-plaintext highlighter-rouge">_posts/</code> with the naming convention <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-your-title.md</code>. Add front matter at the top:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Your Post Title</span>
+<span class="na">tag</span><span class="pi">:</span> <span class="s">Topic</span>
+<span class="na">lede</span><span class="pi">:</span> <span class="s">A one-sentence summary that appears as a styled introduction.</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">tag</code> and <code class="language-plaintext highlighter-rouge">lede</code> fields are optional. If no <code class="language-plaintext highlighter-rouge">lede</code> is provided, the post excerpt is used on the listing page.</p>
+
+<h2 id="customization">Customization</h2>
+
+<p>Edit <code class="language-plaintext highlighter-rouge">_config.yml</code> to set your site title, description, and author. Colors and fonts live in <code class="language-plaintext highlighter-rouge">assets/css/style.css</code> as CSS custom properties — swap them to make the theme your own.</p>
+
+  </div>
+</div>
+
+
+<footer>
+  <div>
+    <p>&copy; 2026 Your Name</p>
+    <p>Powered by <a href="https://jekyllrb.com" class="footer-link">Jekyll</a></p>
+  </div>
+  <div class="footer-contact">
+    <p><a href="/blog/feed.xml">RSS Feed</a></p>
+  </div>
+</footer>
+
+
+<script src="/blog/assets/js/main.js"></script>
+</body>
+</html>

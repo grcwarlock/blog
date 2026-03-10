@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<nav class="nav-post-back">
+  <a href="{{ '/' | relative_url }}" class="nav-back">&larr; All Posts</a>
+</nav>
+
+<div class="articles-header">
+  {% if page.tag %}
+  <span class="section-label">{{ page.tag }}</span>
+  {% endif %}
+  <h1>{{ page.title }}</h1>
+  <div class="article-meta" style="margin-top:1.5rem;">
+    <span class="article-date">{{ page.date | date: "%B %-d, %Y" }}</span>
+  </div>
+</div>
+
+<div class="articles">
+  <article>
+    {% if page.lede %}
+    <p class="lede">{{ page.lede }}</p>
+    {% endif %}
+    <div class="body">
+      {{ content }}
+    </div>
+  </article>
+</div>

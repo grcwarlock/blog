@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="articles-header">
+  <span class="section-label">{{ site.title | default: "Blog" }}</span>
+  <h1>{{ page.headline | default: "Writing." }}</h1>
+  {% if page.tagline %}
+  <p class="page-intro">{{ page.tagline }}</p>
+  {% endif %}
+</div>
+
+<div class="articles">
+  {% for post in site.posts %}
+  <article class="reveal{% cycle '', ' alt' %}">
+    <div class="article-meta">
+      <span class="article-date">{{ post.date | date: "%B %Y" }}</span>
+      {% if post.tag %}
+      <span class="article-tag">{{ post.tag }}</span>
+      {% endif %}
+    </div>
+    <h2><a href="{{ post.url | relative_url }}" class="article-link">{{ post.title }}</a></h2>
+    {% if post.lede %}
+    <p class="lede-preview">{{ post.lede }}</p>
+    {% elsif post.excerpt %}
+    <p class="lede-preview">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+    {% endif %}
+  </article>
+  {% endfor %}
+</div>

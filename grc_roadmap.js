@@ -52,12 +52,12 @@ function addFooter(slide, pageNum) {
   });
   slide.addText("CONFIDENTIAL  |  GRC Program Modernization Roadmap 2026", {
     x: 0.5, y: 5.2, w: 7, h: 0.3,
-    fontSize: 7, color: C.textLight, fontFace: "Calibri"
+    fontSize: 7, color: C.textLight, fontFace: "IBM Plex Mono"
   });
   if (pageNum) {
     slide.addText(String(pageNum), {
       x: 8.5, y: 5.2, w: 1, h: 0.3,
-      fontSize: 7, color: C.textLight, fontFace: "Calibri", align: "right"
+      fontSize: 7, color: C.textLight, fontFace: "IBM Plex Mono", align: "right"
     });
   }
 }
@@ -66,7 +66,7 @@ function addFooter(slide, pageNum) {
 function addTitle(slide, title, color) {
   slide.addText(title, {
     x: 0.6, y: 0.3, w: 8.8, h: 0.55,
-    fontSize: 26, fontFace: "Georgia", bold: true, color: color || C.textDark, margin: 0
+    fontSize: 26, fontFace: "IBM Plex Mono", bold: true, color: color || C.textDark, margin: 0
   });
 }
 
@@ -74,7 +74,7 @@ function addTitle(slide, title, color) {
 function addSubtitle(slide, text) {
   slide.addText(text, {
     x: 0.6, y: 0.85, w: 8.8, h: 0.35,
-    fontSize: 11, fontFace: "Calibri", color: C.textLight, margin: 0
+    fontSize: 11, fontFace: "IBM Plex Mono", color: C.textLight, margin: 0
   });
 }
 
@@ -98,19 +98,19 @@ function addSubtitle(slide, text) {
   // Overline
   slide.addText("STRATEGIC INITIATIVE  |  2026", {
     x: 0.85, y: 1.5, w: 6, h: 0.35,
-    fontSize: 11, fontFace: "Calibri", color: C.teal, charSpacing: 3, margin: 0
+    fontSize: 11, fontFace: "IBM Plex Mono", color: C.teal, charSpacing: 3, margin: 0
   });
 
   // Main title
   slide.addText("GRC Program\nModernization Roadmap", {
     x: 0.85, y: 1.9, w: 6, h: 1.3,
-    fontSize: 36, fontFace: "Georgia", bold: true, color: C.white, margin: 0
+    fontSize: 36, fontFace: "IBM Plex Mono", bold: true, color: C.white, margin: 0
   });
 
   // Subtitle
   slide.addText("From Compliance Function to Strategic Business Enabler", {
     x: 0.85, y: 3.3, w: 6, h: 0.4,
-    fontSize: 13, fontFace: "Calibri", color: C.iceBlue, margin: 0
+    fontSize: 13, fontFace: "IBM Plex Mono", color: C.iceBlue, margin: 0
   });
 
   // Bottom info
@@ -120,7 +120,7 @@ function addSubtitle(slide, text) {
   });
   slide.addText("Prepared for the CISO  |  March 2026  |  CONFIDENTIAL", {
     x: 0.6, y: 4.6, w: 8.8, h: 0.3,
-    fontSize: 9, fontFace: "Calibri", color: C.textLight, margin: 0
+    fontSize: 9, fontFace: "IBM Plex Mono", color: C.textLight, margin: 0
   });
 
   // Right decorative stats area
@@ -137,11 +137,11 @@ function addSubtitle(slide, text) {
   stats.forEach(s => {
     slide.addText(s.val, {
       x: 7.3, y: s.y, w: 2.3, h: 0.4,
-      fontSize: 28, fontFace: "Georgia", bold: true, color: C.white, align: "center", margin: 0
+      fontSize: 28, fontFace: "IBM Plex Mono", bold: true, color: C.white, align: "center", margin: 0
     });
     slide.addText(s.label, {
       x: 7.3, y: s.y + 0.38, w: 2.3, h: 0.25,
-      fontSize: 9, fontFace: "Calibri", color: C.iceBlue, align: "center", margin: 0
+      fontSize: 9, fontFace: "IBM Plex Mono", color: C.iceBlue, align: "center", margin: 0
     });
   });
 }
@@ -194,18 +194,18 @@ function addSubtitle(slide, text) {
     });
     slide.addText(item[0], {
       x: x + 0.1, y: y + 0.06, w: 0.32, h: 0.26,
-      fontSize: 9, fontFace: "Calibri", bold: true, color: C.white, align: "center", valign: "middle", margin: 0
+      fontSize: 9, fontFace: "IBM Plex Mono", bold: true, color: C.white, align: "center", valign: "middle", margin: 0
     });
 
     // Title
     slide.addText(item[1], {
       x: x + 0.52, y: y + 0.02, w: colW - 0.65, h: 0.18,
-      fontSize: 10, fontFace: "Calibri", bold: true, color: C.textDark, margin: 0
+      fontSize: 10, fontFace: "IBM Plex Mono", bold: true, color: C.textDark, margin: 0
     });
     // Description
     slide.addText(item[2], {
       x: x + 0.52, y: y + 0.19, w: colW - 0.65, h: 0.16,
-      fontSize: 7.5, fontFace: "Calibri", color: C.textLight, margin: 0
+      fontSize: 7.5, fontFace: "IBM Plex Mono", color: C.textLight, margin: 0
     });
   });
 }
@@ -235,7 +235,7 @@ function addSubtitle(slide, text) {
   });
   slide.addText("CURRENT STATE", {
     x: lx + 0.2, y: cardY + 0.12, w: 3, h: 0.3,
-    fontSize: 11, fontFace: "Calibri", bold: true, color: C.red, margin: 0
+    fontSize: 11, fontFace: "IBM Plex Mono", bold: true, color: C.red, margin: 0
   });
 
   const currentBullets = [
@@ -252,7 +252,7 @@ function addSubtitle(slide, text) {
       text: b,
       options: { bullet: true, breakLine: i < currentBullets.length - 1, fontSize: 8.5, color: C.textMed }
     })),
-    { x: lx + 0.2, y: cardY + 0.45, w: cardW - 0.4, h: cardH - 0.6, fontFace: "Calibri", paraSpaceAfter: 4, valign: "top" }
+    { x: lx + 0.2, y: cardY + 0.45, w: cardW - 0.4, h: cardH - 0.6, fontFace: "IBM Plex Mono", paraSpaceAfter: 4, valign: "top" }
   );
 
   // Target State Card
@@ -266,7 +266,7 @@ function addSubtitle(slide, text) {
   });
   slide.addText("TARGET STATE (END OF 2026)", {
     x: rx + 0.2, y: cardY + 0.12, w: 3.5, h: 0.3,
-    fontSize: 11, fontFace: "Calibri", bold: true, color: C.green, margin: 0
+    fontSize: 11, fontFace: "IBM Plex Mono", bold: true, color: C.green, margin: 0
   });
 
   const targetBullets = [
@@ -283,7 +283,7 @@ function addSubtitle(slide, text) {
       text: b,
       options: { bullet: true, breakLine: i < targetBullets.length - 1, fontSize: 8.5, color: C.textMed }
     })),
-    { x: rx + 0.2, y: cardY + 0.45, w: cardW - 0.4, h: cardH - 0.6, fontFace: "Calibri", paraSpaceAfter: 4, valign: "top" }
+    { x: rx + 0.2, y: cardY + 0.45, w: cardW - 0.4, h: cardH - 0.6, fontFace: "IBM Plex Mono", paraSpaceAfter: 4, valign: "top" }
   );
 
   // Vision bar at bottom
@@ -294,7 +294,7 @@ function addSubtitle(slide, text) {
   slide.addText([
     { text: "STRATEGIC VISION:  ", options: { bold: true, color: C.blue, fontSize: 10 } },
     { text: "Transform GRC from a reactive cost center into a proactive, revenue-enabling, engineering-integrated strategic function.", options: { color: C.textDark, fontSize: 10 } }
-  ], { x: 0.8, y: 4.45, w: 8.4, h: 0.5, fontFace: "Calibri", valign: "middle" });
+  ], { x: 0.8, y: 4.45, w: 8.4, h: 0.5, fontFace: "IBM Plex Mono", valign: "middle" });
 }
 
 // ═══════════════════════════════════════════════════════════
@@ -322,11 +322,11 @@ function addSubtitle(slide, text) {
     });
     slide.addText(name, {
       x, y: y + 0.07, w, h: 0.2,
-      fontSize: 8.5, fontFace: "Calibri", bold: true, color: C.textDark, align: "center", margin: 0
+      fontSize: 8.5, fontFace: "IBM Plex Mono", bold: true, color: C.textDark, align: "center", margin: 0
     });
     slide.addText(role, {
       x, y: y + 0.25, w, h: 0.16,
-      fontSize: 7, fontFace: "Calibri", color: C.textLight, align: "center", margin: 0
+      fontSize: 7, fontFace: "IBM Plex Mono", color: C.textLight, align: "center", margin: 0
     });
   }
 
@@ -404,7 +404,7 @@ function addSubtitle(slide, text) {
     });
     slide.addText(m.name, {
       x: m.x - 0.5, y: ctBottom + 0.25, w: 1.0, h: 0.28,
-      fontSize: 7, fontFace: "Calibri", color: C.textDark, align: "center", valign: "middle", margin: 0
+      fontSize: 7, fontFace: "IBM Plex Mono", color: C.textDark, align: "center", valign: "middle", margin: 0
     });
   });
 
@@ -417,11 +417,11 @@ function addSubtitle(slide, text) {
   });
   slide.addText("Governance (Paolo DiRosa)", {
     x: 1.7, y: govY + 0.02, w: 1.6, h: 0.2,
-    fontSize: 7.5, fontFace: "Calibri", bold: true, color: C.teal, align: "center", margin: 0
+    fontSize: 7.5, fontFace: "IBM Plex Mono", bold: true, color: C.teal, align: "center", margin: 0
   });
   slide.addText("Barbara A-O, Mateusz Toczek", {
     x: 1.7, y: govY + 0.2, w: 1.6, h: 0.18,
-    fontSize: 6.5, fontFace: "Calibri", color: C.textLight, align: "center", margin: 0
+    fontSize: 6.5, fontFace: "IBM Plex Mono", color: C.textLight, align: "center", margin: 0
   });
 
   // Key observation bar
@@ -432,7 +432,7 @@ function addSubtitle(slide, text) {
   slide.addText([
     { text: "KEY OBSERVATION:  ", options: { bold: true, color: C.orange, fontSize: 9 } },
     { text: "No technical/engineering expertise within GRC team. Customer Trust lacks a dedicated lead since Jodi's departure. Peer alignment with Security Engineering is critical.", options: { color: C.textMed, fontSize: 9 } }
-  ], { x: 0.8, y: 4.68, w: 8.4, h: 0.4, fontFace: "Calibri", valign: "middle" });
+  ], { x: 0.8, y: 4.68, w: 8.4, h: 0.4, fontFace: "IBM Plex Mono", valign: "middle" });
 }
 
 // ═══════════════════════════════════════════════════════════
@@ -508,13 +508,13 @@ function addSubtitle(slide, text) {
     });
     slide.addText(g.severity, {
       x: x + cardW - 0.85, y: cardY + 0.1, w: 0.75, h: 0.22,
-      fontSize: 7, fontFace: "Calibri", bold: true, color: C.white, align: "center", valign: "middle", margin: 0
+      fontSize: 7, fontFace: "IBM Plex Mono", bold: true, color: C.white, align: "center", valign: "middle", margin: 0
     });
 
     // Title
     slide.addText(g.title, {
       x: x + 0.15, y: cardY + 0.1, w: cardW - 1.05, h: 0.3,
-      fontSize: 10.5, fontFace: "Calibri", bold: true, color: C.textDark, margin: 0
+      fontSize: 10.5, fontFace: "IBM Plex Mono", bold: true, color: C.textDark, margin: 0
     });
 
     // Bullets
@@ -523,7 +523,7 @@ function addSubtitle(slide, text) {
         text: b,
         options: { bullet: true, breakLine: j < g.items.length - 1, fontSize: 8, color: C.textMed }
       })),
-      { x: x + 0.15, y: cardY + 0.45, w: cardW - 0.3, h: 2.0, fontFace: "Calibri", paraSpaceAfter: 4, valign: "top" }
+      { x: x + 0.15, y: cardY + 0.45, w: cardW - 0.3, h: 2.0, fontFace: "IBM Plex Mono", paraSpaceAfter: 4, valign: "top" }
     );
 
     // Impact box at bottom
@@ -533,11 +533,11 @@ function addSubtitle(slide, text) {
     });
     slide.addText("BUSINESS IMPACT", {
       x: x + 0.2, y: cardY + cardH - 0.58, w: cardW - 0.4, h: 0.18,
-      fontSize: 7, fontFace: "Calibri", bold: true, color: g.sevColor, margin: 0
+      fontSize: 7, fontFace: "IBM Plex Mono", bold: true, color: g.sevColor, margin: 0
     });
     slide.addText(g.impact, {
       x: x + 0.2, y: cardY + cardH - 0.4, w: cardW - 0.4, h: 0.28,
-      fontSize: 7.5, fontFace: "Calibri", color: C.textMed, margin: 0
+      fontSize: 7.5, fontFace: "IBM Plex Mono", color: C.textMed, margin: 0
     });
   });
 }
@@ -568,7 +568,7 @@ function addSubtitle(slide, text) {
     });
     slide.addText(p.label, {
       x, y: barY, w: barW, h: barH,
-      fontSize: 10, fontFace: "Calibri", bold: true, color: C.white, align: "center", valign: "middle", margin: 0
+      fontSize: 10, fontFace: "IBM Plex Mono", bold: true, color: C.white, align: "center", valign: "middle", margin: 0
     });
   });
 
@@ -637,11 +637,11 @@ function addSubtitle(slide, text) {
 
     slide.addText(d.title, {
       x: x + 0.12, y: dCardY + 0.1, w: dCardW - 0.24, h: 0.22,
-      fontSize: 9.5, fontFace: "Calibri", bold: true, color: d.color, margin: 0
+      fontSize: 9.5, fontFace: "IBM Plex Mono", bold: true, color: d.color, margin: 0
     });
     slide.addText(d.subtitle, {
       x: x + 0.12, y: dCardY + 0.3, w: dCardW - 0.24, h: 0.18,
-      fontSize: 7.5, fontFace: "Calibri", color: C.textLight, margin: 0
+      fontSize: 7.5, fontFace: "IBM Plex Mono", color: C.textLight, margin: 0
     });
 
     slide.addText(
@@ -649,7 +649,7 @@ function addSubtitle(slide, text) {
         text: b,
         options: { bullet: true, breakLine: j < d.items.length - 1, fontSize: 8, color: C.textMed }
       })),
-      { x: x + 0.12, y: dCardY + 0.55, w: dCardW - 0.24, h: dCardH - 0.7, fontFace: "Calibri", paraSpaceAfter: 5, valign: "top" }
+      { x: x + 0.12, y: dCardY + 0.55, w: dCardW - 0.24, h: dCardH - 0.7, fontFace: "IBM Plex Mono", paraSpaceAfter: 5, valign: "top" }
     );
   });
 }
@@ -713,7 +713,7 @@ function addSubtitle(slide, text) {
     });
     slide.addText(col.title, {
       x: x + 0.15, y: colY + 0.1, w: colW - 0.3, h: 0.25,
-      fontSize: 11, fontFace: "Calibri", bold: true, color: col.color, margin: 0
+      fontSize: 11, fontFace: "IBM Plex Mono", bold: true, color: col.color, margin: 0
     });
 
     let textArr = [];
@@ -723,7 +723,7 @@ function addSubtitle(slide, text) {
     });
     slide.addText(textArr, {
       x: x + 0.15, y: colY + 0.4, w: colW - 0.3, h: colH - 0.55,
-      fontFace: "Calibri", paraSpaceAfter: 6, valign: "top"
+      fontFace: "IBM Plex Mono", paraSpaceAfter: 6, valign: "top"
     });
   });
 
@@ -746,11 +746,11 @@ function addSubtitle(slide, text) {
     const kx = 0.6 + i * kpiW;
     slide.addText(k.val, {
       x: kx, y: kpiY + 0.05, w: kpiW, h: 0.4,
-      fontSize: 22, fontFace: "Georgia", bold: true, color: k.color, align: "center", margin: 0
+      fontSize: 22, fontFace: "IBM Plex Mono", bold: true, color: k.color, align: "center", margin: 0
     });
     slide.addText(k.label, {
       x: kx, y: kpiY + 0.48, w: kpiW, h: 0.4,
-      fontSize: 7.5, fontFace: "Calibri", color: C.textLight, align: "center", margin: 0
+      fontSize: 7.5, fontFace: "IBM Plex Mono", color: C.textLight, align: "center", margin: 0
     });
   });
 }
@@ -776,7 +776,7 @@ function addSubtitle(slide, text) {
   });
   slide.addText("Policy-as-Code in CI/CD Pipeline", {
     x: 0.8, y: topY + 0.08, w: leftW - 0.4, h: 0.3,
-    fontSize: 11, fontFace: "Calibri", bold: true, color: C.indigo, margin: 0
+    fontSize: 11, fontFace: "IBM Plex Mono", bold: true, color: C.indigo, margin: 0
   });
 
   // Pipeline stages
@@ -801,7 +801,7 @@ function addSubtitle(slide, text) {
     });
     slide.addText(s.name, {
       x: sx, y: stageY, w: stageW, h: stageH,
-      fontSize: 7, fontFace: "Calibri", bold: true, color: C.white, align: "center", valign: "middle", margin: 0
+      fontSize: 7, fontFace: "IBM Plex Mono", bold: true, color: C.white, align: "center", valign: "middle", margin: 0
     });
     // Arrow
     if (i < stages.length - 1) {
@@ -824,7 +824,7 @@ function addSubtitle(slide, text) {
       text: b,
       options: { bullet: true, breakLine: i < stratBullets.length - 1, fontSize: 8, color: C.textMed }
     })),
-    { x: 0.8, y: topY + 1.1, w: leftW - 0.4, h: 1.1, fontFace: "Calibri", paraSpaceAfter: 4, valign: "top" }
+    { x: 0.8, y: topY + 1.1, w: leftW - 0.4, h: 1.1, fontFace: "IBM Plex Mono", paraSpaceAfter: 4, valign: "top" }
   );
 
   // RIGHT: Engineering Integration Phases
@@ -834,7 +834,7 @@ function addSubtitle(slide, text) {
   });
   slide.addText("Engineering Integration Phases", {
     x: rightX + 0.2, y: topY + 0.08, w: rightW - 0.4, h: 0.3,
-    fontSize: 11, fontFace: "Calibri", bold: true, color: C.blue, margin: 0
+    fontSize: 11, fontFace: "IBM Plex Mono", bold: true, color: C.blue, margin: 0
   });
 
   const intPhases = [
@@ -860,14 +860,14 @@ function addSubtitle(slide, text) {
     });
     slide.addText(p.title, {
       x: rightX + 0.35, y: phaseY - 0.02, w: rightW - 0.6, h: 0.2,
-      fontSize: 9, fontFace: "Calibri", bold: true, color: p.color, margin: 0
+      fontSize: 9, fontFace: "IBM Plex Mono", bold: true, color: p.color, margin: 0
     });
     slide.addText(
       p.items.map((b, i) => ({
         text: b,
         options: { bullet: true, breakLine: i < p.items.length - 1, fontSize: 7.5, color: C.textMed }
       })),
-      { x: rightX + 0.35, y: phaseY + 0.17, w: rightW - 0.6, h: 0.4, fontFace: "Calibri", paraSpaceAfter: 2, valign: "top" }
+      { x: rightX + 0.35, y: phaseY + 0.17, w: rightW - 0.6, h: 0.4, fontFace: "IBM Plex Mono", paraSpaceAfter: 2, valign: "top" }
     );
     phaseY += 0.62;
   });
@@ -880,7 +880,7 @@ function addSubtitle(slide, text) {
   });
   slide.addText("INDUSTRY BEST PRACTICES - GRC AUTOMATION", {
     x: 0.8, y: bpY + 0.08, w: 8.4, h: 0.25,
-    fontSize: 10, fontFace: "Calibri", bold: true, color: C.blue, margin: 0
+    fontSize: 10, fontFace: "IBM Plex Mono", bold: true, color: C.blue, margin: 0
   });
 
   const bps = [
@@ -897,7 +897,7 @@ function addSubtitle(slide, text) {
   });
   slide.addText(bpTextArr, {
     x: 0.8, y: bpY + 0.35, w: 8.4, h: 1.0,
-    fontFace: "Calibri", paraSpaceAfter: 5, valign: "top"
+    fontFace: "IBM Plex Mono", paraSpaceAfter: 5, valign: "top"
   });
 }
 
@@ -961,23 +961,23 @@ function addSubtitle(slide, text) {
     });
     slide.addText(cat.icon, {
       x: x + 0.15, y: colY + 0.12, w: 0.3, h: 0.3,
-      fontSize: 12, fontFace: "Georgia", bold: true, color: C.white, align: "center", valign: "middle", margin: 0
+      fontSize: 12, fontFace: "IBM Plex Mono", bold: true, color: C.white, align: "center", valign: "middle", margin: 0
     });
 
     slide.addText(cat.title, {
       x: x + 0.55, y: colY + 0.13, w: colW - 0.75, h: 0.28,
-      fontSize: 11, fontFace: "Calibri", bold: true, color: cat.color, margin: 0, valign: "middle"
+      fontSize: 11, fontFace: "IBM Plex Mono", bold: true, color: cat.color, margin: 0, valign: "middle"
     });
 
     let my = colY + 0.55;
     cat.metrics.forEach(([name, desc]) => {
       slide.addText(name, {
         x: x + 0.15, y: my, w: colW - 0.3, h: 0.2,
-        fontSize: 9, fontFace: "Calibri", bold: true, color: C.textDark, margin: 0
+        fontSize: 9, fontFace: "IBM Plex Mono", bold: true, color: C.textDark, margin: 0
       });
       slide.addText(desc, {
         x: x + 0.15, y: my + 0.18, w: colW - 0.3, h: 0.3,
-        fontSize: 7.5, fontFace: "Calibri", color: C.textLight, margin: 0
+        fontSize: 7.5, fontFace: "IBM Plex Mono", color: C.textLight, margin: 0
       });
       my += 0.6;
     });
@@ -991,7 +991,7 @@ function addSubtitle(slide, text) {
   slide.addText([
     { text: "DASHBOARD DELIVERY:  ", options: { bold: true, color: C.blue, fontSize: 9 } },
     { text: "Executive dashboard (monthly CISO)  |  Operational dashboard (daily team use)  |  Customer Trust revenue dashboard (sales alignment)", options: { color: C.textMed, fontSize: 9 } }
-  ], { x: 0.8, y: 4.58, w: 8.4, h: 0.44, fontFace: "Calibri", valign: "middle" });
+  ], { x: 0.8, y: 4.58, w: 8.4, h: 0.44, fontFace: "IBM Plex Mono", valign: "middle" });
 }
 
 // ═══════════════════════════════════════════════════════════
@@ -1004,7 +1004,7 @@ function addSubtitle(slide, text) {
   addFooter(slide, 10);
 
   // Risk table using addTable
-  const headerOpts = { fill: { color: C.gray800 }, color: C.white, bold: true, fontSize: 7.5, fontFace: "Calibri", align: "center", valign: "middle" };
+  const headerOpts = { fill: { color: C.gray800 }, color: C.white, bold: true, fontSize: 7.5, fontFace: "IBM Plex Mono", align: "center", valign: "middle" };
 
   const risks = [
     ["R1", "Engineering resistance to GRC integration", "Med", "High", "Start with value-add automation, not mandates. CISO sponsorship."],
@@ -1042,13 +1042,13 @@ function addSubtitle(slide, text) {
     colW: [0.4, 2.6, 0.75, 0.75, 4.2],
     border: { pt: 0.5, color: C.gray300 },
     rowH: [0.3, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
-    fontFace: "Calibri",
+    fontFace: "IBM Plex Mono",
   });
 
   // Dependencies section
   slide.addText("Key Dependencies", {
     x: 0.6, y: 4.05, w: 8.8, h: 0.3,
-    fontSize: 12, fontFace: "Calibri", bold: true, color: C.textDark, margin: 0
+    fontSize: 12, fontFace: "IBM Plex Mono", bold: true, color: C.textDark, margin: 0
   });
 
   const deps = [
@@ -1062,7 +1062,7 @@ function addSubtitle(slide, text) {
       text: d,
       options: { bullet: true, breakLine: i < deps.length - 1, fontSize: 8.5, color: C.textMed }
     })),
-    { x: 0.7, y: 4.35, w: 8.5, h: 0.8, fontFace: "Calibri", paraSpaceAfter: 3, valign: "top" }
+    { x: 0.7, y: 4.35, w: 8.5, h: 0.8, fontFace: "IBM Plex Mono", paraSpaceAfter: 3, valign: "top" }
   );
 }
 
@@ -1091,7 +1091,7 @@ function addSubtitle(slide, text) {
   });
   slide.addText("Investment Areas", {
     x: 0.8, y: cardY + 0.08, w: leftW - 0.4, h: 0.3,
-    fontSize: 12, fontFace: "Calibri", bold: true, color: C.blue, margin: 0
+    fontSize: 12, fontFace: "IBM Plex Mono", bold: true, color: C.blue, margin: 0
   });
 
   const investments = [
@@ -1104,7 +1104,7 @@ function addSubtitle(slide, text) {
   investments.forEach(inv => {
     slide.addText(inv.cat, {
       x: 0.8, y: iy, w: leftW - 0.4, h: 0.22,
-      fontSize: 9.5, fontFace: "Calibri", bold: true, color: C.textDark, margin: 0
+      fontSize: 9.5, fontFace: "IBM Plex Mono", bold: true, color: C.textDark, margin: 0
     });
     iy += 0.22;
     slide.addText(
@@ -1112,7 +1112,7 @@ function addSubtitle(slide, text) {
         text: b,
         options: { bullet: true, breakLine: j < inv.items.length - 1, fontSize: 8, color: C.textMed }
       })),
-      { x: 0.85, y: iy, w: leftW - 0.55, h: inv.items.length * 0.18, fontFace: "Calibri", paraSpaceAfter: 2, valign: "top" }
+      { x: 0.85, y: iy, w: leftW - 0.55, h: inv.items.length * 0.18, fontFace: "IBM Plex Mono", paraSpaceAfter: 2, valign: "top" }
     );
     iy += inv.items.length * 0.18 + 0.12;
   });
@@ -1127,7 +1127,7 @@ function addSubtitle(slide, text) {
   });
   slide.addText("Expected Return on Investment", {
     x: rightX + 0.2, y: cardY + 0.08, w: rightW - 0.4, h: 0.3,
-    fontSize: 12, fontFace: "Calibri", bold: true, color: C.green, margin: 0
+    fontSize: 12, fontFace: "IBM Plex Mono", bold: true, color: C.green, margin: 0
   });
 
   const rois = [
@@ -1145,11 +1145,11 @@ function addSubtitle(slide, text) {
     });
     slide.addText(roi.title, {
       x: rightX + 0.35, y: ry, w: rightW - 0.6, h: 0.18,
-      fontSize: 9, fontFace: "Calibri", bold: true, color: roi.color, margin: 0
+      fontSize: 9, fontFace: "IBM Plex Mono", bold: true, color: roi.color, margin: 0
     });
     slide.addText(roi.desc, {
       x: rightX + 0.35, y: ry + 0.18, w: rightW - 0.6, h: 0.26,
-      fontSize: 7.5, fontFace: "Calibri", color: C.textMed, margin: 0
+      fontSize: 7.5, fontFace: "IBM Plex Mono", color: C.textMed, margin: 0
     });
     ry += 0.52;
   });
@@ -1161,7 +1161,7 @@ function addSubtitle(slide, text) {
   });
   slide.addText("VALUE DELIVERY TIMELINE", {
     x: 0.8, y: 4.42, w: 8.4, h: 0.2,
-    fontSize: 10, fontFace: "Calibri", bold: true, color: C.blue, margin: 0
+    fontSize: 10, fontFace: "IBM Plex Mono", bold: true, color: C.blue, margin: 0
   });
 
   const milestones = [
@@ -1178,7 +1178,7 @@ function addSubtitle(slide, text) {
   });
   slide.addText(mlTextArr, {
     x: 0.8, y: 4.62, w: 8.4, h: 0.4,
-    fontFace: "Calibri", paraSpaceAfter: 2, valign: "top"
+    fontFace: "IBM Plex Mono", paraSpaceAfter: 2, valign: "top"
   });
 }
 
@@ -1211,7 +1211,7 @@ function addSubtitle(slide, text) {
   });
   slide.addText("30-Day Action Plan", {
     x: 0.8, y: 1.02, w: leftW - 0.4, h: 0.3,
-    fontSize: 12, fontFace: "Calibri", bold: true, color: C.blue, margin: 0
+    fontSize: 12, fontFace: "IBM Plex Mono", bold: true, color: C.blue, margin: 0
   });
 
   const steps = [
@@ -1224,7 +1224,7 @@ function addSubtitle(slide, text) {
   steps.forEach(s => {
     slide.addText(s.week, {
       x: 0.8, y: sy, w: leftW - 0.4, h: 0.22,
-      fontSize: 9.5, fontFace: "Calibri", bold: true, color: C.textDark, margin: 0
+      fontSize: 9.5, fontFace: "IBM Plex Mono", bold: true, color: C.textDark, margin: 0
     });
     sy += 0.24;
     slide.addText(
@@ -1232,7 +1232,7 @@ function addSubtitle(slide, text) {
         text: b,
         options: { bullet: true, breakLine: j < s.items.length - 1, fontSize: 8, color: C.textMed }
       })),
-      { x: 0.85, y: sy, w: leftW - 0.55, h: s.items.length * 0.17, fontFace: "Calibri", paraSpaceAfter: 2, valign: "top" }
+      { x: 0.85, y: sy, w: leftW - 0.55, h: s.items.length * 0.17, fontFace: "IBM Plex Mono", paraSpaceAfter: 2, valign: "top" }
     );
     sy += s.items.length * 0.17 + 0.15;
   });
@@ -1247,7 +1247,7 @@ function addSubtitle(slide, text) {
   });
   slide.addText("The Ask from CISO", {
     x: rightX + 0.2, y: 1.02, w: rightW - 0.4, h: 0.3,
-    fontSize: 12, fontFace: "Calibri", bold: true, color: C.indigo, margin: 0
+    fontSize: 12, fontFace: "IBM Plex Mono", bold: true, color: C.indigo, margin: 0
   });
 
   const asks = [
@@ -1263,7 +1263,7 @@ function addSubtitle(slide, text) {
       text: a,
       options: { bullet: true, breakLine: i < asks.length - 1, fontSize: 8.5, color: C.textMed }
     })),
-    { x: rightX + 0.2, y: 1.35, w: rightW - 0.4, h: 1.4, fontFace: "Calibri", paraSpaceAfter: 4, valign: "top" }
+    { x: rightX + 0.2, y: 1.35, w: rightW - 0.4, h: 1.4, fontFace: "IBM Plex Mono", paraSpaceAfter: 4, valign: "top" }
   );
 
   // RIGHT BOTTOM: Success Criteria
@@ -1276,7 +1276,7 @@ function addSubtitle(slide, text) {
   });
   slide.addText("Success Criteria (12 Months)", {
     x: rightX + 0.2, y: 3.16, w: rightW - 0.4, h: 0.3,
-    fontSize: 11, fontFace: "Calibri", bold: true, color: C.green, margin: 0
+    fontSize: 11, fontFace: "IBM Plex Mono", bold: true, color: C.green, margin: 0
   });
 
   const criteria = [
@@ -1291,7 +1291,7 @@ function addSubtitle(slide, text) {
       text: c,
       options: { bullet: true, breakLine: i < criteria.length - 1, fontSize: 8.5, color: C.textMed }
     })),
-    { x: rightX + 0.2, y: 3.5, w: rightW - 0.4, h: 1.3, fontFace: "Calibri", paraSpaceAfter: 4, valign: "top" }
+    { x: rightX + 0.2, y: 3.5, w: rightW - 0.4, h: 1.3, fontFace: "IBM Plex Mono", paraSpaceAfter: 4, valign: "top" }
   );
 }
 
@@ -1342,14 +1342,14 @@ function addSubtitle(slide, text) {
     });
     slide.addText(card.title, {
       x: x + 0.15, y: y + 0.08, w: cw - 0.3, h: 0.25,
-      fontSize: 10.5, fontFace: "Calibri", bold: true, color: card.color, margin: 0
+      fontSize: 10.5, fontFace: "IBM Plex Mono", bold: true, color: card.color, margin: 0
     });
     slide.addText(
       card.items.map((b, j) => ({
         text: b,
         options: { bullet: true, breakLine: j < card.items.length - 1, fontSize: 8, color: C.textMed }
       })),
-      { x: x + 0.15, y: y + 0.38, w: cw - 0.3, h: ch - 0.5, fontFace: "Calibri", paraSpaceAfter: 3, valign: "top" }
+      { x: x + 0.15, y: y + 0.38, w: cw - 0.3, h: ch - 0.5, fontFace: "IBM Plex Mono", paraSpaceAfter: 3, valign: "top" }
     );
   });
 }
